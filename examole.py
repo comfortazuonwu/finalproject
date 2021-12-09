@@ -1,54 +1,15 @@
-**Trees**
+# values = {1,2,3,4,5,6}
 
-**Introduction**
+# my_set = set(values)
 
-A tree is a collection of nodes connected by directed (or undirected) edges.It is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
-We will be looking at binary trees, binary search trees, balanced binary search trees.
+# my_set.add(2)
+# print (my_set)
 
-**Binary Trees** 
+# my_set.remove(4)
+# print (my_set)
 
-A tree whose elements have at most 2 children is called a binary tree. The children are named left and right children since each element can only have two children. A binary tree node contains three parts: Data, pinter to left child and pointer to right child.
-
-![Binary Tree](binarytree.JPG)
-
-
-**Binary Search Tree**
-A Binary Search Tree is a node-based binary tree data structure which goes by the following rules:
-
-- The left subtree of a node contains only nodes with keys lesser than the node’s key.
-- The right subtree of a node contains only nodes with keys greater than the node’s key.
-- The left and right subtree each must also be a binary search tree.
-
-![Binary Search Tree](bst.png)
-
-**Balanced Binary Search Tree**]
-A balanced binary tree is also known as height balanced tree. It is defined as binary tree in when the difference between the height of the left subtree and right subtree is not more than m, where m is usually equal to 1. The height of a tree is the number of edges on the longest path between the root node and the leaf node.
-
-
-![Balanced tree](balancedbinary.JPG)
-
-
-This is a balanced binary search tree
-
-
-![Unbalanced tree](unbalanced.JPG)
-
-This is an unbalanced binary search tree
-
-
-**Tree Operations in python**
-|Common BST Operations | Explanation | Perfomance|
-|----------------------|-------------|------------|
-|insert(value) |Inserts a value into the tree| O(logn)|
-|remove(value) |Removes value from the tree| O(logn)|
-|traverse_foward|Visit all objects from smallest to largest|O(logn)|
-|traverse_reverse| Visit all objects from largest to smallest|O(logn)
-|height(node)| Determines the height of the node| O(logn)|
-|size() | Returns the size of the BST| O(1) |
-
-
-**Problem to solve**
-```python
+# length = len(my_set)
+# print (length)
 
 
 class BST:
@@ -242,6 +203,3 @@ print(7 in tree) # True
 print(6 in tree) # True
 print(9 in tree) # False
 
-```
-
-Take a look at the [solution](treessolution.py) when you are done
