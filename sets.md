@@ -1,6 +1,13 @@
 **Sets**
 
 **Introduction**
+
+
+
+![Set image](setsimage.png)
+
+When people are first introduced to a set in data structure, they think of the image above. Well, sets in data structures are a little different from sets in mathematics.
+
 A set is a data structure that can store any number of unique values in any order you so wish. The difference is between a set and an array is that an array allows repeated values and a set allows only unique values. The python set() method is used to define a set.
 
 ``` python
