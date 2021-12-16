@@ -14,7 +14,7 @@ A Queue is a linear structure which follows the order in which the operations ar
 
 **Simple Queue**
 
-A simple queue strictly follows the FIFO rule(removal at the front, insertion at the rear)
+A simple queue strictly follows the FIFO rule (removal at the front, insertion at the rear)
 
 ![simple queue](simple-queue.jpg)
 
@@ -48,7 +48,7 @@ In a double ended queue, insertion and removal of elements can be performed from
 | Queue Operations| Explanation                           | Example                       | Performance           |
 | ----------------| ------------------------------------- | ----------------------------- |---------------------- |
 | enqueue         | It adds value to the back of the queue. Uses the append() method| queue.append(x) |  O(1)     |
-| dequeue         | Remove and return the item from the front of the queue or pop off index 0| del queue[0]| O(n) ||                                 
+| dequeue         | Remove and return the item from the front of the queue or pop off index 0. Uses the pop() method|queue.pop(0)| O(n) ||                                 
 |   size          |Returns the size of a queue. Uses the len() method|size = len(queue)|   O(1)                       |                       
 
  Below is an example of how queue works in python. This gives a good explanation of the First In, First Out rule.
@@ -77,10 +77,7 @@ print(queue.pop(0))
 print('\nNew Queue')
 print(queue)
 
-```
-This is the output of the code above
-
-``` python
+"""code output"""
 
 First queue
 ['first', 'second', 'third', 'fourth']
@@ -123,7 +120,7 @@ class Queue:
 
 # Test case
 # Scenario: Enqueue three values and then Dequeue it.
-# Exepcted Result: It should display 10, 20 , 30 
+# Expected Result: It should display 10,20,30 
 print("Test 1")
 queue = Queue()
 queue.enqueue(10)

@@ -3,7 +3,6 @@
 **Introduction**
 
 
-
 ![Set image](setsimage.png)
 
 When people are first introduced to a set in data structure, they think of the image above. Well, sets in data structures are a little different from sets in mathematics.
@@ -18,10 +17,9 @@ print(my_set)
 {1, 3, 4, 5, 6}
 
 ``` 
-**Chacteristics of sets**
+**Characteristics of sets**
 - Sets are unordered
 - Sets only allow unique elements
-
 
 
 
@@ -31,8 +29,7 @@ print(my_set)
 |-------------|-------------|----------|-----------|
 |add(value)|Adds a value to a set using the  python add() method| set.add(value)|O(1)|
 |remove(value)|Removes a value from a set using the python remove() method| set.remove(value)|O(1)|
-|size()| Used to find out the lenght of a set using the python len() method| size = len(set)|
-
+|size()| Used to find out the length of a set using the python len() method| size = len(set)|
 
 Below is an example of how sets work in python
 
@@ -59,7 +56,6 @@ print (length)
 We see that when 2 is added to the set, the set doesn't change because 2 was already in the set and it doesn't allow duplicates.
 
 
-
 **Problem to solve**
 Using a set, determine if there are duplicate letters in the text given
 
@@ -69,7 +65,6 @@ def letters(text):
     """Using a set, determine if there are duplicate letters in the text given. Return true if there are no duplicates and false if there are duplicates"""
 
 pass
-
 
 test1 = "Pauline"  # Expect True because all letters unique
 print(letters(test1))
